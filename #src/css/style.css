@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    -webkit-text-size-adjust:none;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    padding:0 99px 0 101px;
+    background-color:#E93E3B;
+}
+
+.header{
+    width:100%;
+    height: 116px;
+}
+
+.header td:first-child{
+    width:221px;
+}
+
+.header td:nth-child(3){
+    width:128px;
+}
+
+.header__contact-link{
+    display: block;
+    color:#fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:0 18px;
+    border-collapse: separate;
+}
+
+/* .main tr{
+    border-bottom: #EEEEEE 5px solid;
+} */
+
+.main>tr>td:last-child, .main>tr>td:nth-last-child(2){
+    border-bottom: #EEEEEE 5px dotted;
+}
+
+.order-header{
+    padding:40px 0;
+    text-align: center;
+}
+
+.order-header__img{
+
+}
+
+.order-header__title{
+    height: 52px;
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #29282D;
+    text-align: left;
+}
+
+.order-info{
+    width: 100%;
+    padding:0 18px;
+}
+
+.order-info tr>td{
+    width: 50%;
+}
+
+.order-info__title{
+    padding-top: 23px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    color: #29282D;
+}
+
+.order-info__field{
+    display: block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 29px;
+    color: #818181;
+}
+
+.order-info__value{
+    display: block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 29px;
+    color: #29282D;
+}
+
+
+.order-items{
+
+}
+
+.order-items__col-title{
+    width:15%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 29px;
+    color: #818181;
+    border-bottom:1px solid #EEEEEE;
+}
+
+.order-items__col-title:first-child{
+    width:15%;
+}
+
+.order-items__col-title:nth-child(2){
+    width:20%;
+}
+
+.order-items__col-title:nth-last-child(2){
+    width:15%;
+}
+
+.order-items__col-title:last-child(2){
+    width:12%;
+}
+
+
+
+
+
+
