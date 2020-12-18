@@ -1,4 +1,4 @@
-*{
+body *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
@@ -55,6 +55,7 @@ a{
 } */
 
 .main>tr:not(:last-child)>td:last-child, .main>tr:not(:last-child)>td:nth-last-child(2){
+    padding-bottom: 16px;
     border-bottom: #EEEEEE 5px dotted;
 }
 
