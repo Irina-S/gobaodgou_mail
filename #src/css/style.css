@@ -109,6 +109,11 @@ a{
     color: #29282D;
 }
 
+.order-info_phone td{
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
 .order-info__field{
     display: block;
     /* font-family: Open Sans; */
