@@ -91,7 +91,7 @@ a{
     padding:0 18px;
 }
 
-.order-info tr td{
+.order-info tr td:not([colspan]){
     width: 50%;
 }
 
@@ -227,6 +227,7 @@ a{
 .order-contacts__insta{
     display: block;
     /* font-family: Open Sans; */
+    text-decoration: underline;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -235,9 +236,11 @@ a{
 }
 
 .order-contacts__insta span{
-    position: relative;
-    top: -20px;
-    left: 17px;
+    vertical-align: top;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
 }
 
 .order-contacts__tel:first-child, .order-contacts__insta{
@@ -256,27 +259,27 @@ a{
 .footer__text{
     display: inline-block;
     width: 400px;
-    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
-    /* text-align: center; */
     color: #FFFFFF;
 }
 
 .footer__link{
     display: block;
     margin-top: 5px;
-    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 20px;
-    /* identical to box height, or 167% */
-    /* text-align: center; */
     text-decoration-line: underline;
     color: #FFFFFF;
+}
+
+.footer__email{
+    color:#ffffff;
+    text-decoration: none;
 }
 
 
