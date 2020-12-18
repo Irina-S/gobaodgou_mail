@@ -1,5 +1,11 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -23,13 +29,13 @@ a{
 }
 
 .header td:nth-child(3){
-    width:128px;
+    width: 140px;
 }
 
 .header__contact-link{
     display: block;
     color:#fff;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -39,8 +45,8 @@ a{
 .main{
     width: 100%;
     background-color: #fff;
-    border-radius: 10px;
-    padding:0 18px;
+    border-radius: 10px 10px 0 0;
+    /* padding:0 18px; */
     border-collapse: separate;
 }
 
@@ -48,8 +54,12 @@ a{
     border-bottom: #EEEEEE 5px solid;
 } */
 
-.main>tr>td:last-child, .main>tr>td:nth-last-child(2){
+.main>tr:not(:last-child)>td:last-child, .main>tr:not(:last-child)>td:nth-last-child(2){
     border-bottom: #EEEEEE 5px dotted;
+}
+
+.main>tr:nth-last-child(2)>td{
+    border: none;
 }
 
 .order-header{
@@ -64,7 +74,9 @@ a{
 .order-header__title{
     height: 52px;
     display: inline-block;
-    font-family: 'Open Sans';
+    position: relative;
+    top: -20px;
+    /* font-family: 'Open Sans'; */
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -73,18 +85,22 @@ a{
     text-align: left;
 }
 
-.order-info{
+.order-info, .order-info_another{
     width: 100%;
     padding:0 18px;
 }
 
-.order-info tr>td{
+.order-info tr td{
     width: 50%;
 }
 
-.order-info__title{
+.order-info tr:first-child td,  .order-info_another tr:first-child td{
     padding-top: 23px;
-    font-family: Open Sans;
+}
+
+.order-info__title{
+    /* padding-top: 23px; */
+    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -94,7 +110,7 @@ a{
 
 .order-info__field{
     display: block;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -104,7 +120,7 @@ a{
 
 .order-info__value{
     display: block;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -114,15 +130,19 @@ a{
 
 
 .order-items{
+    width: 100%;
+}
 
+.order-items td{
+    font-size: 12px;
 }
 
 .order-items__col-title{
     width:15%;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
+    /* font-size: 12px; */
     line-height: 29px;
     color: #818181;
     border-bottom:1px solid #EEEEEE;
@@ -136,12 +156,126 @@ a{
     width:20%;
 }
 
+.order-items__col-title:nth-child(3){
+    width:35%;
+}
+
 .order-items__col-title:nth-last-child(2){
     width:15%;
 }
 
-.order-items__col-title:last-child(2){
+.order-items__col-title:last-child{
     width:12%;
+}
+
+.order-items tr:nth-child(2) td{
+    padding-top: 20px;
+}
+
+.order-items tr:last-child td{
+    padding-bottom:  30px;
+}
+
+.order-item__img{
+    width: 65px;
+    height:46px;
+    object-fit: cover;
+}
+
+.order-contacts{
+    background: #FFD600;
+    width: 100%;
+    height: 159px;
+
+}
+
+.order-contacts{
+    text-align: center;
+    border-radius:  0px 0px 10px 10px;
+}
+
+.order-contacts td:first-child{
+    padding: 32px 0 32px 31px;
+}
+
+.order-contacts td:nth-child(2){
+    padding: 32px 31px 32px 0;
+}
+
+.order-contacts__title{
+    display: block;
+    margin-bottom: 5px;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #29282D;
+}
+
+.order-contacts__tel{
+    display: block;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #29282D;
+}
+
+.order-contacts__insta{
+    display: block;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #29282D;
+}
+
+.order-contacts__insta span{
+    position: relative;
+    top: -20px;
+    left: 17px;
+}
+
+.order-contacts__tel:first-child, .order-contacts__insta{
+    margin-top: 5px;
+}
+
+.footer{
+    width: 100%;
+    height: 144px;;
+}
+
+.footer td{
+    text-align: center;
+}
+
+.footer__text{
+    display: inline-block;
+    width: 400px;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    /* text-align: center; */
+    color: #FFFFFF;
+}
+
+.footer__link{
+    display: block;
+    margin-top: 5px;
+    /* font-family: Open Sans; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    /* text-align: center; */
+    text-decoration-line: underline;
+    color: #FFFFFF;
 }
 
 
